@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
+import SetupBanner from '../components/SetupBanner'
 import {
   Package,
   KeyRound,
@@ -100,6 +101,7 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-6">
+      <SetupBanner />
       <div>
         <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
         <p className="text-sm text-gray-500 mt-1">Overview of your store and warranty system</p>
